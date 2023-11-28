@@ -19,10 +19,9 @@ def get_employees(tx):
 
 # Wyszukiwanie pracowników z opcjonalnym filtrowaniem i sortowaniem
 def get_filtered_employees(tx, filter_criteria=None, sort_by=None):
-    # Podstawowe zapytanie Cypher, które obejmuje pracowników i ich relacje MANAGES
+    
     query = (
         "MATCH (e:Employee)-[:WORKS_IN]->(d:Department) "
-        "OPTIONAL MATCH (e)-[:MANAGES]->(m:Employee) "
         "RETURN e.name AS employee, e.position AS position, e.salary AS salary, d.name AS department"
     )
 
