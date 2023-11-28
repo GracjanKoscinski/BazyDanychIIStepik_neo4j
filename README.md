@@ -1,6 +1,7 @@
 # Employee Management API
 
 This API is built using Neo4j and Flask framework in Python. It provides functionality for managing employees and departments within an organization.
+It is hosted on Render at [https://bazydanychiineo4jflask.onrender.com/employees](https://bazydanychiineo4jflask.onrender.com/employees).
 
 # Available Endpoints:
 
